@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "372427916737",
+    "project_id": "bitescan-96240",
+    "storage_bucket": "bitescan-96240.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372427916737:android:a27e80a17a3d4b7375db40",
+        "android_client_info": {
+          "package_name": "com.example.bitescan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQmpfQk62KDB0dXRdI6-O0bSsLUW56lyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
