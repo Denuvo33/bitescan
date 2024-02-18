@@ -113,16 +113,21 @@ class _ProfilePageState extends State<ProfilePage> {
                                       child: const Text('No')),
                                   TextButton(
                                       onPressed: () async {
-                                        Navigator.pop(context);
-                                        await FirebaseAuth.instance.signOut();
-                                        await GoogleSignIn().signOut();
-                                        if (!context.mounted) return;
-                                        Navigator.pop(context);
-                                        Navigator.pushReplacement(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    const SignInPage()));
+                                        try {
+                                          Navigator.pop(context);
+                                          await FirebaseAuth.instance.signOut();
+                                          await GoogleSignIn().signOut();
+                                          Navigator.pop(context);
+                                          Navigator.pushReplacement(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const SignInPage()));
+                                        } catch (e) {
+                                          ScaffoldMessenger.of(context)
+                                              .showSnackBar(SnackBar(
+                                                  content: Text(e.toString())));
+                                        }
                                       },
                                       child: const Text('Yes'))
                                 ],

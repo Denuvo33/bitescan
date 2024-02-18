@@ -57,25 +57,25 @@ class _ScannedPageState extends State<ScannedPage> {
                           context: context,
                           builder: ((context) {
                             return AlertDialog(
-                              title: Text('Choose Image Source'),
+                              title: const Text('Choose Image Source'),
                               actions: [
                                 TextButton(
                                     onPressed: () {
                                       getImage(ImageSource.camera);
                                       Navigator.pop(context);
                                     },
-                                    child: Text('Camera')),
+                                    child: const Text('Camera')),
                                 TextButton(
                                     onPressed: () {
                                       getImage(ImageSource.gallery);
                                       Navigator.pop(context);
                                     },
-                                    child: Text('Gallery'))
+                                    child: const Text('Gallery'))
                               ],
                             );
                           }));
                     },
-                    child: Text('Scan')),
+                    child: const Text('Scan')),
               )
             ],
           ),
