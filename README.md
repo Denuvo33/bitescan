@@ -1,16 +1,1 @@
-# bitescan
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The Bitescan app is an application we designed based on machine learning, which also focuses on computer vision technology. This application can make it easier and more efficient for users to find out the nutritional content of food by scanning the food. Our application will detect the type of food and display information related to the nutritional content of the food. Not only that, we also provide various features for users, such as food recommendations, meals, statistics, and consultation with nutritionists.
