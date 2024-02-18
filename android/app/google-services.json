@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "372427916737",
+    "firebase_url": "https://bitescan-96240-default-rtdb.firebaseio.com",
     "project_id": "bitescan-96240",
     "storage_bucket": "bitescan-96240.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.bitescan"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "372427916737-ne49s1o8erpklqbfmps7qu6mvrteo082.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bitescan",
+            "certificate_hash": "2fb57a6b71029c027003d4f29cb0c05fa36a5910"
+          }
+        },
+        {
+          "client_id": "372427916737-1hqpr748b1r59ksiu3bj1s6c7e3c2ltk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBQmpfQk62KDB0dXRdI6-O0bSsLUW56lyY"
@@ -20,7 +34,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372427916737-1hqpr748b1r59ksiu3bj1s6c7e3c2ltk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "372427916737-2mujhf3foeello1b8pfa14ftui3aie6f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bitescan.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
