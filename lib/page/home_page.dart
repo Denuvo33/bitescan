@@ -144,14 +144,11 @@ class _HomePageState extends State<HomePage> {
                             ),
                             Row(
                               children: [
-                                SizedBox(
-                                  width: 200,
+                                Expanded(
                                   child: Stack(
                                     alignment: Alignment.center,
                                     children: [
                                       SfCircularChart(
-                                        margin: const EdgeInsets.all(0),
-                                        // backgroundColor: Colors.red,
                                         series: <CircularSeries>[
                                           DoughnutSeries<ChartData, String>(
                                               innerRadius: '75%',
@@ -171,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                                       const Column(
                                         children: [
                                           Text(
-                                            '256',
+                                            '256 cal',
                                           ),
                                           Text(
                                             'Remaining',
