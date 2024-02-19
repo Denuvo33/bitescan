@@ -114,19 +114,25 @@ class _ProfilePageState extends State<ProfilePage> {
                                   TextButton(
                                       onPressed: () async {
                                         try {
-                                          Navigator.pop(context);
                                           await FirebaseAuth.instance.signOut();
                                           await GoogleSignIn().signOut();
-                                          Navigator.pop(context);
                                           Navigator.pushReplacement(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const SignInPage()));
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const SignInPage(),
+                                            ),
+                                          );
                                         } catch (e) {
+                                          // Handle errors here
                                           ScaffoldMessenger.of(context)
-                                              .showSnackBar(SnackBar(
-                                                  content: Text(e.toString())));
+                                              .showSnackBar(
+                                            SnackBar(
+                                              content: Text(e.toString()),
+                                            ),
+                                          );
+                                          // Ensure that the dialog is dismissed before navigation
+                                          Navigator.pop(context);
                                         }
                                       },
                                       child: const Text('Yes'))
