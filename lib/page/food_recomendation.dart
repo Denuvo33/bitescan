@@ -29,23 +29,17 @@ class FoodRecPage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (ctx) => const LoseWeightPage()));
                   },
-                  child: const Card(
-                    child: Center(
-                        child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Lose Weight',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Icon(
-                          Icons.keyboard_double_arrow_down,
-                          color: Colors.red,
-                          size: 33,
-                        )
-                      ],
-                    )),
-                  ),
+                  child: Center(
+                      child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset('images/gainimage.png'),
+                      const Text(
+                        'Lose Weight',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  )),
                 ),
               ),
               const SizedBox(
@@ -61,23 +55,17 @@ class FoodRecPage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (ctx) => const GainWeightPage()));
                   },
-                  child: const Card(
-                    child: Center(
-                        child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Gain Weight',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Icon(
-                          Icons.keyboard_double_arrow_up,
-                          color: Colors.green,
-                          size: 33,
-                        )
-                      ],
-                    )),
-                  ),
+                  child: Center(
+                      child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset('images/loseimage.png'),
+                      const Text(
+                        'Gain Weight',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  )),
                 ),
               ),
               const SizedBox(
@@ -91,23 +79,17 @@ class FoodRecPage extends StatelessWidget {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (ctx) => const BMIPage()));
                   },
-                  child: const Card(
-                    child: Center(
-                        child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Calculate your BMI',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Icon(
-                          Icons.calculate_rounded,
-                          color: Colors.blue,
-                          size: 33,
-                        )
-                      ],
-                    )),
-                  ),
+                  child: Center(
+                      child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset('images/calculate BMI.png'),
+                      const Text(
+                        'Calculate your BMI',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  )),
                 ),
               )
             ],
