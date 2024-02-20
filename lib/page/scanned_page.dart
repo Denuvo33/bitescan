@@ -77,7 +77,6 @@ class _ScannedPageState extends State<ScannedPage> {
   @override
   void dispose() {
     Tflite.close();
-    // TODO: implement dispose
     super.dispose();
   }
 
