@@ -114,8 +114,11 @@ class _ProfilePageState extends State<ProfilePage> {
                                   TextButton(
                                       onPressed: () async {
                                         try {
+                                          Navigator.pop(context);
                                           await FirebaseAuth.instance.signOut();
                                           await GoogleSignIn().signOut();
+                                          if (!context.mounted) return;
+                                          Navigator.pop(context);
                                           Navigator.pushReplacement(
                                             context,
                                             MaterialPageRoute(
@@ -124,14 +127,14 @@ class _ProfilePageState extends State<ProfilePage> {
                                             ),
                                           );
                                         } catch (e) {
-                                          // Handle errors here
+                                          if (!context.mounted) return;
                                           ScaffoldMessenger.of(context)
                                               .showSnackBar(
                                             SnackBar(
                                               content: Text(e.toString()),
                                             ),
                                           );
-                                          // Ensure that the dialog is dismissed before navigation
+
                                           Navigator.pop(context);
                                         }
                                       },
